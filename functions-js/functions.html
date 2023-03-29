@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //these two functions have the same result
+
+            //normal function - outcome = 17
+            function add7(a) {
+                return a + 7;
+            }
+            console.log(add7(10));
+
+            //shorter funtion - outcome = 17
+            let sum = (a, b) => a+b;
+            console.log( sum(7, 10) );
+
+
+
+            //normal function - outcome = 70
+            function multiply7(b){
+                return b * 7;
+            }
+            console.log(multiply7(10));
+
+            //shorter function - outcome = 70
+            let multiply = (a, b) => a*b;
+            console.log(multiply(7, 10))
+
+
+
+            //function - outcome = STRING
+            function capitalize(string){
+                return string.toUpperCase();
+            }
+            console.log(capitalize('string'));
+
+
+
+            //function - outcome = 
+            function lastletter(string){
+                return string.charAt(3);
+            }
+            console.log(lastletter('abcd'));
+
+        </script>
+    </body>
+</html>
